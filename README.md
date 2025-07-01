@@ -2,7 +2,6 @@
 # Proyecto de C++ - DARK KNIGHT
 
 ## Descripción del Proyecto
-## 🎮 Descripción del Proyecto
 **DARK KNIGHT** es un juego de combate por turnos ambientado en un mundo de fantasía oscura. El jugador asume el rol de un valiente caballero cuya misión es derrotar una serie de enemigos (duendes, orcos, bestias mágicas, dragones) para salvar su reino del mal que lo amenaza. A medida que gana combates, sus estadísticas de ataque y defensa aumentan, preparándolo para enfrentar al jefe final.
 
 ---
