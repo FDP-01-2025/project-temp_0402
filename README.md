@@ -1,32 +1,42 @@
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/mi1WNrHU)
-# Proyecto de C++ - [Nombre del Juego]
+# Proyecto de C++ - DARK KNIGHT
 
 ## Descripción del Proyecto
+## 🎮 Descripción del Proyecto
+**DARK KNIGHT** es un juego de combate por turnos ambientado en un mundo de fantasía oscura. El jugador asume el rol de un valiente caballero cuya misión es derrotar una serie de enemigos (duendes, orcos, bestias mágicas, dragones) para salvar su reino del mal que lo amenaza. A medida que gana combates, sus estadísticas de ataque y defensa aumentan, preparándolo para enfrentar al jefe final.
 
-Breve descripción del juego, su propósito, cómo se juega y cualquier otro detalle importante que describa la idea general del proyecto.
+---
 
-**Por ejemplo:**
-Este proyecto consiste en un juego de aventuras donde el jugador debe explorar un mundo virtual, recoger objetos, resolver acertijos y enfrentar enemigos. El juego utiliza estructuras de control como `if`, `switch`, y bucles `while` y `for` para generar interacciones dinámicas.
+## Temática y Ambientación
+La historia se desarrolla en un reino medieval plagado de criaturas mágicas y oscuridad. El protagonista es un caballero oscuro que recorre tierras peligrosas para liberar su hogar. El estilo es épico, con una atmósfera de heroísmo, poder y estrategia.
+
+---
+
+## Mecánica Principal
+- Combates por turnos: el jugador y el enemigo se turnan para realizar acciones.
+- Opciones del jugador: atacar o defender.
+- Mejora de estadísticas al vencer enemigos.
+- Secuencia lineal de enemigos con dificultad creciente.
+
+---
+
+## Jugabilidad General
+1. El jugador inicia con vida, ataque y defensa básicos.
+2. Enfrenta a una lista de enemigos en orden.
+3. En cada turno, elige entre atacar o defender.
+4. La batalla continúa hasta que uno de los dos pierda toda su vida.
+5. Si gana, mejora sus estadísticas y avanza al siguiente enemigo.
+6. El juego termina al vencer al jefe final o morir en combate.
+
+##
 
 ## Equipo
 
-- **Nombre del equipo:** [Nombre del equipo]
+- **Nombre del equipo:** Temp_0402
 
-### Integrantes del equipo
+### Integrante
 
-1. **Nombre completo:** [Nombre del estudiante 1]  
-   **Carnet:** [Carnet del estudiante 1]
+1. **Nombre completo:** Elias Fernando Rivera Martinez  
+   **Carnet:** 00137525
 
-2. **Nombre completo:** [Nombre del estudiante 2]  
-   **Carnet:** [Carnet del estudiante 2]
 
-3. **Nombre completo:** [Nombre del estudiante 3]  
-   **Carnet:** [Carnet del estudiante 3]
-
-(Agregar más integrantes si es necesario)
-
-## Instrucciones de Ejecución
-
-1. Clona este repositorio en tu máquina local:
-   ```bash
-   git clone [URL del repositorio]
