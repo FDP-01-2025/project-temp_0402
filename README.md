@@ -28,7 +28,7 @@ La historia se desarrolla en un reino medieval plagado de criaturas mágicas y o
 6. El juego termina al vencer al jefe final o morir en combate.
 
 ## Imagenes del juego 
-(./dark.webp)
+![](C:\Users\elias\Desktop\PROYECTO\project-temp_0402\img)
 
 ## Equipo
 
