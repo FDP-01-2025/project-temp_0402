@@ -27,7 +27,8 @@ La historia se desarrolla en un reino medieval plagado de criaturas mágicas y o
 5. Si gana, mejora sus estadísticas y avanza al siguiente enemigo.
 6. El juego termina al vencer al jefe final o morir en combate.
 
-##
+## Imagenes del juego 
+(./dark.webp)
 
 ## Equipo
 
