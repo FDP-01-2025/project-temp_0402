@@ -4,20 +4,14 @@
 ## Descripción del Proyecto
 **DARK KNIGHT** es un juego de combate por turnos ambientado en un mundo de fantasía oscura. El jugador asume el rol de un valiente caballero cuya misión es derrotar una serie de enemigos (duendes, orcos, bestias mágicas, dragones) para salvar su reino del mal que lo amenaza. A medida que gana combates, sus estadísticas de ataque y defensa aumentan, preparándolo para enfrentar al jefe final.
 
----
-
 ## Temática y Ambientación
 La historia se desarrolla en un reino medieval plagado de criaturas mágicas y oscuridad. El protagonista es un caballero oscuro que recorre tierras peligrosas para liberar su hogar. El estilo es épico, con una atmósfera de heroísmo, poder y estrategia.
-
----
 
 ## Mecánica Principal
 - Combates por turnos: el jugador y el enemigo se turnan para realizar acciones.
 - Opciones del jugador: atacar o defender.
 - Mejora de estadísticas al vencer enemigos.
 - Secuencia lineal de enemigos con dificultad creciente.
-
----
 
 ## Jugabilidad General
 1. El jugador inicia con vida, ataque y defensa básicos.
