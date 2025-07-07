@@ -136,7 +136,6 @@ void startGame() {
     initializePlayer();
     initializeEnemies();
     cout << "=== DARK KNIGHT ADVENTURE ===\n";
-    cout << "Easier Version with Enemy AI\n\n";
     
     for (int i = 0; i < 5; i++) {
         if (!combat(enemies[i])) {
