@@ -1,7 +1,21 @@
-#include "header.h"
+#include <iostream>
+
+using namespace std;
+
+struct Character {
+    string name;
+    int health;
+    int attack;
+    int defense;
+    bool isDefending;
+    int tempDefense;
+};
+
+Character player;
+Character enemies[5];
 
 void initializePlayer() {
-    player = {"Dark Knight", 150, 12, 8, false, 0};
+    player = {"Dark Knight", 120, 12, 8, false, 0};
 }
 
 void initializeEnemies() {
@@ -20,6 +34,7 @@ void showStatus(const Character &enemy) {
     if (player.isDefending) {
         cout << " (DEF +" << player.tempDefense << ")";
     }
+    
     cout << "\n" << enemy.name << ": HP " << enemy.health 
          << " | ATK " << enemy.attack 
          << " | DEF " << enemy.defense;
@@ -63,6 +78,7 @@ void playerTurn(Character &enemy) {
 void enemyTurn(Character &enemy) {
     if (enemy.health <= 0) return;
 
+    // Simplemente alternamos entre atacar y defender
     static bool shouldDefend = false;
     shouldDefend = !shouldDefend;
 
@@ -131,4 +147,9 @@ void startGame() {
     }
     
     cout << "\nCONGRATULATIONS! You saved the kingdom!\n";
+}
+
+int main() {
+    startGame();
+    return 0;
 }
