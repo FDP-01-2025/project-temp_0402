@@ -149,6 +149,7 @@ void startGame() {
     cout << "\nCONGRATULATIONS! You saved the kingdom!\n";
 }
 
+
 int main() {
     startGame();
     return 0;
