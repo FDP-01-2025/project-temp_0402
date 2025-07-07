@@ -15,7 +15,6 @@ La historia se desarrolla en un reino medieval plagado de criaturas mágicas y o
 - Combates por turnos: el jugador y el enemigo se turnan para realizar acciones.
 - Opciones del jugador: atacar o defender.
 - Mejora de estadísticas al vencer enemigos.
-- Secuencia lineal de enemigos con dificultad creciente.
 
 ---
 
