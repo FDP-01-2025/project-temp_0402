@@ -137,6 +137,7 @@ void startGame() {
     initializeEnemies();
     cout << "=== DARK KNIGHT ADVENTURE ===\n";
     
+    
     for (int i = 0; i < 5; i++) {
         if (!combat(enemies[i])) {
             cout << "\nGAME OVER\n";
