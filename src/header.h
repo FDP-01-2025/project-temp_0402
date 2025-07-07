@@ -10,7 +10,7 @@ struct Character {
     int tempDefense;
 };
 
-// Variables globales
+
 Character player;
 Character enemies[5];
 
