@@ -1,5 +1,4 @@
 #include <iostream>
-
 using namespace std;
 
 struct Character {
@@ -26,17 +25,17 @@ void initializeEnemies() {
     enemies[4] = {"Final Boss", 150, 15, 12, false, 0};
 }
 
-void showStatus(const Character &enemy) {
+void showStatus(Character enemy) {
     cout << "\n=== BATTLE STATUS ===";
-    cout << "\n" << player.name << ": HP " << player.health 
-         << " | ATK " << player.attack 
+    cout << "\n" << player.name << ": HP " << player.health
+         << " | ATK " << player.attack
          << " | DEF " << player.defense;
     if (player.isDefending) {
         cout << " (DEF +" << player.tempDefense << ")";
     }
-    
-    cout << "\n" << enemy.name << ": HP " << enemy.health 
-         << " | ATK " << enemy.attack 
+
+    cout << "\n" << enemy.name << ": HP " << enemy.health
+         << " | ATK " << enemy.attack
          << " | DEF " << enemy.defense;
     if (enemy.isDefending) {
         cout << " (DEF +" << enemy.tempDefense << ")";
@@ -44,14 +43,14 @@ void showStatus(const Character &enemy) {
     cout << "\n====================\n";
 }
 
-void playerTurn(Character &enemy) {
+Character playerTurn(Character enemy) {
     int action;
     cout << "\nChoose action:\n";
     cout << "1. Attack\n";
     cout << "2. Defend\n";
     cout << "Your choice: ";
     cin >> action;
-    
+
     if (action == 1) {
         int damage = player.attack - enemy.defense;
         if (enemy.isDefending) {
@@ -71,14 +70,14 @@ void playerTurn(Character &enemy) {
     }
     else {
         cout << "Invalid choice! Try again.\n";
-        playerTurn(enemy);
+        return playerTurn(enemy);
     }
+    return enemy;
 }
 
-void enemyTurn(Character &enemy) {
-    if (enemy.health <= 0) return;
+Character enemyTurn(Character enemy) {
+    if (enemy.health <= 0) return enemy;
 
-    // Simplemente alternamos entre atacar y defender
     static bool shouldDefend = false;
     shouldDefend = !shouldDefend;
 
@@ -86,8 +85,7 @@ void enemyTurn(Character &enemy) {
         enemy.tempDefense = 5 + enemy.defense;
         enemy.isDefending = true;
         cout << enemy.name << " prepares to defend!\n";
-    }
-    else {
+    } else {
         int damage = enemy.attack - player.defense;
         if (player.isDefending) {
             damage -= player.tempDefense;
@@ -99,25 +97,23 @@ void enemyTurn(Character &enemy) {
         player.health -= damage;
         cout << enemy.name << " attacks you for " << damage << " damage!\n";
     }
+    return enemy;
 }
 
-bool combat(Character &enemy) {
+bool combat(Character enemy) {
     cout << "\n\nYou encounter a " << enemy.name << "!\n";
-    
+
     while (player.health > 0 && enemy.health > 0) {
         showStatus(enemy);
-        playerTurn(enemy);
-        
+        enemy = playerTurn(enemy);
         if (enemy.health <= 0) break;
-        
-        enemyTurn(enemy);
-        
+        enemy = enemyTurn(enemy);
         if (player.health <= 0) {
             cout << "You have been defeated by " << enemy.name << "!\n";
             return false;
         }
     }
-    
+
     cout << "You defeated " << enemy.name << "!\n";
     return true;
 }
@@ -125,7 +121,7 @@ bool combat(Character &enemy) {
 void levelUp() {
     player.attack += 3;
     player.defense += 2;
-    player.health += 30;
+    player.health += 15;
     cout << "Level Up!\n";
     cout << "ATK +3 (" << player.attack << ")\n";
     cout << "DEF +2 (" << player.defense << ")\n";
@@ -136,8 +132,7 @@ void startGame() {
     initializePlayer();
     initializeEnemies();
     cout << "=== DARK KNIGHT ADVENTURE ===\n";
-    
-    
+
     for (int i = 0; i < 5; i++) {
         if (!combat(enemies[i])) {
             cout << "\nGAME OVER\n";
@@ -145,10 +140,9 @@ void startGame() {
         }
         levelUp();
     }
-    
+
     cout << "\nCONGRATULATIONS! You saved the kingdom!\n";
 }
-
 
 int main() {
     startGame();
