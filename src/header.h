@@ -1,5 +1,4 @@
-#ifndef HEADER_H
-#define HEADER_H
+
 #include <iostream>
 #include <string>
 using namespace std;
@@ -21,4 +20,3 @@ Character enemyTurn(Character enemy);
 bool combat(Character enemy);
 void levelUp();
 void startGame();
-#endif // HEADER_H
