@@ -26,6 +26,14 @@ La historia se desarrolla en un reino medieval plagado de criaturas mágicas y o
 5. Si gana, mejora sus estadísticas y avanza al siguiente enemigo.
 6. El juego termina al vencer al jefe final o morir en combate.
 
+---
+
+## Consideraciones técnicas del desarrollo
+- El juego está hecho en C++.
+- El combate simula decisiones estratégicas.
+- El código está estructurado en funciones para mantener claridad y modularidad.
+- Se puede expandir fácilmente agregando más enemigos, habilidades o un sistema de objetos.
+
 ## Imagenes del juego 
 ![](https://github.com/FDP-01-2025/project-temp_0402/blob/main/img/dark.png)
 
