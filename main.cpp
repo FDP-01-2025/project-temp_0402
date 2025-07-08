@@ -27,16 +27,12 @@ void initializeEnemies() {
 
 void showStatus(Character enemy) {
     cout << "\n=== BATTLE STATUS ===";
-    cout << "\n" << player.name << ": HP " << player.health
-         << " | ATK " << player.attack
-         << " | DEF " << player.defense;
+    cout << "\n" << player.name << ": HP " << player.health<< " | ATK " << player.attack<< " | DEF " << player.defense;
     if (player.isDefending) {
         cout << " (DEF +" << player.tempDefense << ")";
     }
 
-    cout << "\n" << enemy.name << ": HP " << enemy.health
-         << " | ATK " << enemy.attack
-         << " | DEF " << enemy.defense;
+    cout << "\n" << enemy.name << ": HP " << enemy.health<< " | ATK " << enemy.attack<< " | DEF " << enemy.defense;
     if (enemy.isDefending) {
         cout << " (DEF +" << enemy.tempDefense << ")";
     }
